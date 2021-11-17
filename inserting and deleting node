@@ -27,8 +27,22 @@ newNode->data = 4; struct node *temp = head;
 newNode->next = temp->next;
  temp->next = newNode;
 
+deleting
+1. Delete from beginning
+head = head->next;
 
+2. Delete from end
+struct node* temp = head;
+while(temp->next->next!=NULL){
+  temp = temp->next;
+}
+temp->next = NULL;
 
+3. Delete from middle
+for(int i=2; i< position; i++) {
+  if(temp->next!=NULL) {
+    temp = temp->next;
+  }
+}
 
-
-
+temp->next = temp->next->next;

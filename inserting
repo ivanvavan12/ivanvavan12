@@ -15,15 +15,6 @@ struct node *temp = head;
  temp->next = newNode;
 
 
-
-
-
-
-
-
-
-
-
 3. Insert at the Middle
 struct node *newNode; 
 newNode = malloc(sizeof(struct node)); 
